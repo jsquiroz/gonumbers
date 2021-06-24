@@ -27,3 +27,6 @@ func New(r, c int, data []float64) *matrix {
 
 // Shape regresa la longitud de las filas y columnas de la matriz correspondiente
 func (m *matrix) Shape() (r, c int) { return m.r, m.c }
+
+// Size regresa el total de elementos en la matriz
+func (m *matrix) Size() (t int) { return len(m.data) }
