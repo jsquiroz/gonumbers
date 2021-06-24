@@ -24,3 +24,6 @@ func New(r, c int, data []float64) *matrix {
 		data: data,
 	}
 }
+
+// Shape regresa la longitud de las filas y columnas de la matriz correspondiente
+func (m *matrix) Shape() (r, c int) { return m.r, m.c }
